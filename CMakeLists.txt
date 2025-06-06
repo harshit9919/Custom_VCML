@@ -139,6 +139,7 @@ add_library(vcml STATIC
     ${src}/vcml/models/timers/sp804.cpp
     ${src}/vcml/models/timers/nrf51.cpp
     ${src}/vcml/models/timers/pl031.cpp
+    ${src}/vcml/models/demo/randomdev.cpp 
     ${src}/vcml/models/block/backend_file.cpp
     ${src}/vcml/models/block/backend_ram.cpp
     ${src}/vcml/models/block/backend.cpp
