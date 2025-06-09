@@ -2,7 +2,7 @@
 #include <cstdlib>  // for rand()
 
 namespace vcml {
-namespace demo {
+namespace ethernet {
 
 randomdev::randomdev(const sc_module_name& nm):
     peripheral(nm),
@@ -32,5 +32,5 @@ void randomdev::reset() {
     RANDOM_VAL = 0;
 }
 
-} // namespace demo
+} // namespace ethernet
 } // namespace vcml

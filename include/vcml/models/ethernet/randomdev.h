@@ -6,7 +6,7 @@
 #include "vcml/core/systemc.h"
 
 namespace vcml {
-namespace demo {
+namespace ethernet {
 
 class randomdev : public peripheral {
 public:
@@ -14,7 +14,7 @@ public:
 
     randomdev(const sc_module_name& name);
     virtual ~randomdev();
-    VCML_KIND(demo::randomdev);
+    VCML_KIND(randomdev);
 
     virtual void reset() override;
 
@@ -23,5 +23,5 @@ private:
     u32 read_random();
 };
 
-} // namespace demo
+} // namespace ethernet
 } // namespace vcml
