@@ -1,4 +1,4 @@
-#include "vcml/models/demo/randomdev.h"
+#include "vcml/models/ethernet/randomdev.h"
 #include <cstdlib>  // for rand()
 
 namespace vcml {
