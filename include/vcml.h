@@ -107,6 +107,8 @@
 #include "vcml/models/ethernet/network.h"
 #include "vcml/models/ethernet/lan9118.h"
 #include "vcml/models/ethernet/ethoc.h"
+#include "vcml/models/ethernet/randomdev.h"
+
 
 #include "vcml/models/can/backend.h"
 #include "vcml/models/can/bridge.h"
