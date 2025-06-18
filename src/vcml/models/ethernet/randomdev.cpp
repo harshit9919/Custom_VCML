@@ -6,19 +6,21 @@ namespace ethernet {
 
 randomdev::randomdev(const sc_module_name& nm):
     peripheral(nm),
+    in("in"),   // Initialize the TLM socket
     RANDOM_VAL("RANDOM_VAL", 0x00, 0x0) {
 
+    // Register behavior
     RANDOM_VAL.sync_always();
     RANDOM_VAL.allow_read_only();
     RANDOM_VAL.on_read(&randomdev::read_random);
 }
 
 randomdev::~randomdev() {
-    // nothing to clean up
+    // Nothing to clean up
 }
 
 u32 randomdev::generate_random() {
-    return rand();  // simple non-secure RNG
+    return rand();  // Simple (non-cryptographic) random number
 }
 
 u32 randomdev::read_random() {
