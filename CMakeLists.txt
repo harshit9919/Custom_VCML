@@ -150,6 +150,7 @@ add_library(vcml STATIC
     ${src}/vcml/models/ethernet/network.cpp
     ${src}/vcml/models/ethernet/lan9118.cpp
     ${src}/vcml/models/ethernet/ethoc.cpp
+    ${src}/vcml/models/ethernet/randomdev.cpp  
     ${src}/vcml/models/can/backend.cpp
     ${src}/vcml/models/can/backend_file.cpp
     ${src}/vcml/models/can/bridge.cpp
